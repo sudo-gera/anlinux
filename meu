@@ -47,10 +47,10 @@ else:
   if not(ist()):
    on()
   print('started')
-  while not(os.path.exists('/root/exv')):
+  while not(os.path.exists('/root/.vnc/___exv')):
    time.sleep(1)
   print('exiting')
-  sh('rm /root/exv')
+  sh('rm /root/.vnc/___exv')
   off()
  else:
   print(q)
