@@ -4,7 +4,8 @@ sh=os.system
 q=os.popen('ifconfig').read()
 q='\n'.join([w for w in '\n'.join([w for w in q.split('\n') if 'inet' in w]).split('  ') if 'inet' in w])
 print(q)
-sh('~/start-ubuntu.sh < ~/ubuntu-fs/root/.vnc/___gov &')
+#sh('~/start-ubuntu.sh < ~/ubuntu-fs/root/.vnc/___gov &')
+sh('echo "___meu vi" | ~/start-ubuntu.sh &')
 input()
 sh('touch ~/ubuntu-fs/root/.vnc/___exv')
 import time
